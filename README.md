@@ -1,10 +1,23 @@
 # driver-alerts
 
+### Pre-requisites
+```
+npm install sails -g
+```
+
 ### Install instructions
 ```
 npm install
+```
+### Development Start - Require for first time to run migrations
+```
 sails lift
 ```
+### Production Start - Not needed if using development mode
+```
+npm start
+```
+
 Navigate to http://localhost:1337 to view the alert and output data.
 The server also has a bit more detailed output data in the console log.
 
