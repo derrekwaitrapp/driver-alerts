@@ -102,6 +102,7 @@ class Phone {
     this.driverId = driverId;
     this.accelerometer = new Accelerometer();
     this.gps = new GPS();
+    sails.log.info(`Fake Phone Started.`);
     setInterval(this.onUpdate.bind(this), 5000);
   }
   async onUpdate(){
@@ -142,6 +143,6 @@ module.exports.bootstrap = async function() {
     .create( { active: true } )
     .fetch();
 
-  sails.log.info(`Driver data seeded.`, driver);
+  sails.log.info(`Driver data seeded.`);
   new Phone(driver.id);
 };

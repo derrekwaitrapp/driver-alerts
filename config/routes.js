@@ -20,7 +20,6 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
-  '/client': { view: 'pages/client' },
 
 
 
